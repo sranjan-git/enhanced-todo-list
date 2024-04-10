@@ -14,21 +14,21 @@ const TodoList: React.FC = () => {
   const [filter, setFilter] = useState<"all" | "active" | "completed">("all");
   
   // Initially I tried implementing night mode feature, but as it was not looking good, hence removed.
-  // const [nightMode, setNightMode] = useState(false);
+  const [nightMode, setNightMode] = useState(false);
 
-  // // Toggle night mode
-  // const toggleNightMode = () => {
-  //   setNightMode(!nightMode);
-  // };
+  // Toggle night mode
+  const toggleNightMode = () => {
+    setNightMode(!nightMode);
+  };
 
-  // useEffect(() => {
-  //   // Add or remove the 'night-mode' class from the body element
-  //   if (nightMode) {
-  //     document.body.classList.add("night-mode");
-  //   } else {
-  //     document.body.classList.remove("night-mode");
-  //   }
-  // }, [nightMode]);
+  useEffect(() => {
+    // Add or remove the 'night-mode' class from the body element
+    if (nightMode) {
+      document.body.classList.add("night-mode");
+    } else {
+      document.body.classList.remove("night-mode");
+    }
+  }, [nightMode]);
 
   useEffect(() => {
     // Load tasks from localStorage
