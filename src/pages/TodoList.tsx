@@ -108,7 +108,7 @@ const TodoList: React.FC = () => {
       <input
         className="wFull"
         type="text"
-        placeholder="Enter task title"
+        placeholder="Enter task name"
         value={newTaskTitle}
         onChange={(e) => setNewTaskTitle(e.target.value)}
       />
@@ -116,7 +116,7 @@ const TodoList: React.FC = () => {
       <input
         className="wFull"
         type="text"
-        placeholder="Enter description (optional)"
+        placeholder="Enter task description (optional)"
         value={newTaskDescription}
         onChange={(e) => setNewTaskDescription(e.target.value)}
       />
