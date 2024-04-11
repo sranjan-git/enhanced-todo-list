@@ -104,7 +104,7 @@ const TodoList: React.FC = () => {
 
   return (
     <div className={`todo-list ${nightMode ? "night-mode" : ""}`}>
-      <h1>My Tasks</h1>
+      <h1>My Tasks 📝</h1>
       <input
         className="wFull"
         type="text"
