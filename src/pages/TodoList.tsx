@@ -47,7 +47,7 @@ const TodoList: React.FC = () => {
   // Add Task
  const addTask = () => {
     if (newTaskTitle === "") {
-      alert("Please enter task name");
+      alert("Please enter task name.");
     }
     if (newTaskTitle.trim() !== "") {
       const newTask: Task = {
