@@ -175,7 +175,9 @@ const TodoList: React.FC = () => {
             ❤️
           </span>{" "}
           by{" "}
-          <a href="https://www.linkedin.com/in/sudhanshu-ranjan-7a3305216/">
+          <a href="https://www.linkedin.com/in/sudhanshu-ranjan-7a3305216/"
+            target="_blank"
+          >
             Sudhanshu Ranjan
           </a>
         </p>
